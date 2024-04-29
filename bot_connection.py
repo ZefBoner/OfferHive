@@ -37,7 +37,7 @@ async def chat_message(update: Update,
 
 
 if __name__ == "__main__":
-    app = Application.builder().token("6332076176:AAFtght4HB-88N5SYpu3kJ6HQvzMhcmRI9o").build()
+    app = Application.builder().token("6332076176:AAFtght4HB-").build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT, chat_message))
     app.run_polling(poll_interval = 1)
